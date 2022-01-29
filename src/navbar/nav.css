@@ -1,0 +1,124 @@
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    justify-content: space-between;
+    direction: rtl;
+}
+.NavBar > .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+    
+    
+}
+.NavBar > .logo > img {
+    width: 80%;
+    display: block;
+
+    
+    
+}
+.NavBar > .nav-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    
+    
+}
+.NavBar > .nav-links-container > .links{
+    margin: 0 40px;
+    font-family: Cairo;
+    
+
+}
+.NavBar > .nav-links-container > .links > a{
+    margin: 0 20px;
+    font-weight: 900;
+    font-size: 18px;
+    color:black;
+}
+.NavBar > .toggle {
+    display: none;
+    width:50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+@media(max-width : 1050px){
+    .NavBar > .toggle {
+        display: flex;
+        width:50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+    .NavBar > .toggle > .bar {
+        content: "";
+        width:32px;
+        height: 2px;
+        position: relative;
+        background-color: red;    
+    }
+    .NavBar > .toggle > .bar::before , .NavBar > .toggle > .bar::after {
+        content: "";
+        
+        position: absolute;
+        height:2px;
+        background-color: red;    
+    }
+    .toggle > .bar::before{
+        width:32px;
+        transform: translateY(-8px);
+        right: 0;
+    }
+    .toggle > .bar::after{
+        width:32px;
+        transform: translateY(8px);
+        right: 0;
+    }
+    
+    .NavBar > .nav-links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width:80%;
+        position:absolute;
+        right:10%;
+        top: 60px;
+        
+        }
+    .NavBar > .nav-links-container > .links{
+        margin: 0 40px;
+        font-family: Cairo;
+        display:flex;
+        flex-direction: column;
+        
+    
+    }
+    .NavBar > .nav-links-container > .links > a{
+        margin: 10px 40px;
+        font-family: Cairo;
+        display:flex;
+        flex-direction: column;
+        
+    
+    }
+    .NavBar > .close{
+        display:none;
+    }
+    
+
+}
