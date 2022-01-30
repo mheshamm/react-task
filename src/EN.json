@@ -1,0 +1,9 @@
+{
+    "header":{
+        "home" : "Home",
+        "pricing" : "Pricing",
+        "call" : "Calling Sales",
+        "track" : "Tracking",
+        "login" : "Login"
+    }
+}
